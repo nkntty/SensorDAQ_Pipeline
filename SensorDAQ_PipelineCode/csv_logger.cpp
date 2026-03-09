@@ -12,3 +12,6 @@ CSVLogger:: CSVLogger(const string& filename) : out_(filename, ios::trunc) {
 void CSVLogger::log(double time, double raw, double filtered) {
     out_ << time << "," << raw << "," << filtered << "\n";
 }
+
+/* ios::truc:(truncate) When a file is opened with the ios::trunc flag, any existing content in the file is immediately discarded (deleted), and the file size is set to zero.  */
+/*ios::app(append): the existing content of the file is retained    */
